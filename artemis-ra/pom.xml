@@ -24,6 +24,7 @@
       <version>2.4.0</version>
    </parent>
 
+   <version>2.4.0-NPE</version>
    <artifactId>artemis-ra</artifactId>
    <packaging>jar</packaging>
 
@@ -49,19 +50,19 @@
       <dependency>
          <groupId>org.apache.activemq</groupId>
          <artifactId>artemis-core-client</artifactId>
-         <version>${project.version}</version>
+         <version>${project.parent.version}</version>
          <scope>provided</scope>
       </dependency>
       <dependency>
          <groupId>org.apache.activemq</groupId>
          <artifactId>artemis-jms-client</artifactId>
-         <version>${project.version}</version>
+         <version>${project.parent.version}</version>
          <scope>provided</scope>
       </dependency>
       <dependency>
          <groupId>org.apache.activemq</groupId>
          <artifactId>artemis-jms-server</artifactId>
-         <version>${project.version}</version>
+         <version>${project.parent.version}</version>
          <scope>provided</scope>
          <exclusions>
             <exclusion>
@@ -84,7 +85,7 @@
       <dependency>
          <groupId>org.apache.activemq</groupId>
          <artifactId>artemis-service-extensions</artifactId>
-         <version>${project.version}</version>
+         <version>${project.parent.version}</version>
       </dependency>
    </dependencies>
 
