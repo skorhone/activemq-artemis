@@ -49,7 +49,7 @@ public interface ActiveMQRALogger extends BasicLogger {
    /**
     * The default logger.
     */
-   ActiveMQRALogger LOGGER = Logger.getMessageLogger(ActiveMQRALogger.class, ActiveMQRALogger.class.getPackage().getName());
+   ActiveMQRALogger LOGGER = Logger.getMessageLogger(ActiveMQRALogger.class, ActiveMQRALogger.class.getName().substring(0, ActiveMQRALogger.class.getName().lastIndexOf('.')) );
 
    @LogMessage(level = Logger.Level.INFO)
    @Message(id = 151000, value = "awaiting topic/queue creation {0}", format = Message.Format.MESSAGE_FORMAT)
